@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <div id="navbar">
+        <div class="topbar_leftMenu">
+          <div class="topbar_logo">
+            <img
+              src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+              alt="logo"
+            />
+            <p class="topbar_brandName">Kafene</p>
+          </div>
+          <nav>
+            <a class="topbar_menuItems" href="./orders.html">Orders</a>
+            <a class="topbar_menuItems" href="./product.html">Products</a>
+            <a class="topbar_menuItems" href="./users.html">Users</a>
+          </nav>
+        </div>
+        <!-- <a class="topbar_rightMenu">Logout</a> -->
+      </div>
+
+      <!--------------- login section----------- -->
+
+      <main class="main_container">
+        <div>
+          <form class="loginPage_form">
+            <h1>Sign In</h1>
+            <input
+              type="text"
+              class="loginPage_input"
+              name="username"
+              id="username"
+              placeholder="Enter Username"
+            />
+            <input
+              type="password"
+              class="loginPage_input"
+              name="password"
+              id="password"
+              placeholder="Enter Password"
+            />
+            <!-- <input type="submit" class="loginPage_button" value="Login" /> -->
+            <input
+              type="button"
+              class="loginPage_button"
+              value="Login"
+              id="submit"
+              onclick="login()"
+            />
+          </form>
+        </div>
+      </main>
+    </div>
+    <!-- external script files -->
+    <script src="./jQuery/jquery-3.6.0.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

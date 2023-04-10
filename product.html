@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="import" href="./index.html" />
+  </head>
+  <body>
+    <!-- <div id="nav"></div> -->
+    <div>
+      <div id="navbar">
+        <div class="topbar_leftMenu">
+          <div class="topbar_logo">
+            <img
+              src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+              alt="logo"
+            />
+            <p class="topbar_brandName">Kafene</p>
+          </div>
+          <nav>
+            <a class="topbar_menuItems" href="./orders.html">Orders</a>
+            <a class="topbar_menuItems topbar_active" href="./product.html"
+              >Products</a
+            >
+            <a class="topbar_menuItems" href="./users.html">Users</a>
+          </nav>
+        </div>
+        <a class="topbar_rightMenu" href="./index.html">Logout</a>
+      </div>
+      <!-- navbar ends here -->
+
+      <main class="main_container">
+        <div class="Product_Wrapper">
+          <h1 class="Product_Heading">Products</h1>
+          <div class="Product_ordersWrapper">
+            <div class="Product_FilterWrapper">
+              <h3>Filters</h3>
+              <div class="Products_FilterOptions">
+                <p id="count">Count: 29</p>
+                <label class="Products_filterCheckbox">
+                  <input
+                    type="checkbox"
+                    name="products"
+                    value="Expired"
+                    id="expired"
+                    onclick="loadProductData()"
+                    checked
+                  />
+                  Expired
+                </label>
+                <label class="Products_filterCheckbox">
+                  <input
+                    type="checkbox"
+                    name="products"
+                    value="LowStock"
+                    id="low_stock"
+                    onclick="loadProductData()"
+                    checked
+                  />
+                  Low Stock
+                </label>
+              </div>
+            </div>
+            <div style="width: 100%">
+              <table class="Products_orderTable">
+                <tr>
+                  <th>ID</th>
+                  <th>Product Name</th>
+                  <th>Product Brand</th>
+                  <th>Expiry Date</th>
+                  <th>Unit Price</th>
+                  <th>Stock</th>
+                </tr>
+                <tbody class="Products_tableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- external script files -->
+
+    <script src="./product.js"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f7fb;
+}
+
+/* header */
+#navbar {
+  width: 100%;
+  align-items: center;
+  padding: 0 48px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 0 2px 4px #ccc;
+  justify-content: space-between;
+}
+#navbar,
+.topbar_leftMenu,
+.topbar_logo {
+  display: flex;
+  align-items: center;
+}
+.topbar_logo {
+  margin-right: 36px;
+}
+.topbar_logo img {
+  width: 24px;
+  height: 28px;
+  margin-right: 8px;
+}
+.topbar_brandName {
+  font-size: 24px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+.topbar_menuItems,
+.topbar_rightMenu {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 24px 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  margin: 0 10px;
+}
+.topbar_menuItems.topbar_active {
+  color: #20b883;
+  border-bottom: 3px solid #20b883;
+}
+
+/* login form */
+.main_container {
+  margin-top: 100px;
+}
+.loginPage_form {
+  width: 100%;
+  background-color: #fff;
+  max-width: 500px;
+  border-radius: 6px;
+  margin: 0 auto;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 6px #ccc;
+}
+.loginPage_form h1 {
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 0 0 24px;
+}
+.loginPage_input {
+  width: 100%;
+  border-bottom: 2px solid #8c8c8c;
+  padding-top: 16px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  padding-top: 16px;
+}
+
+.loginPage_button {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #20b883;
+  color: #fff;
+  border: none;
+}
+
+/* orders page , products page & userlist page style */
+
+.Homepage_Wrapper,
+.Product_Wrapper,
+.UserList_Wrapper {
+  width: 100%;
+  padding: 0 8% 4%;
+}
+.Homepage_ordersWrapper,
+.Product_ordersWrapper {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px 0;
+}
+.Homepage_FilterWrapper,
+.Product_FilterWrapper {
+  width: 180px;
+}
+.Homepage_FilterOptions,
+.Products_FilterOptions {
+  display: flex;
+  flex-direction: column;
+}
+.Homepage_FilterOptions p,
+.Products_FilterOptions p {
+  margin: 16px 0;
+}
+.Homepage_filterCheckbox,
+.Products_filterCheckbox {
+  margin: 6px 0;
+  cursor: pointer;
+}
+.Homepage_filterCheckbox input,
+.Products_filterCheckbox input {
+  margin-right: 12px;
+}
+
+/* table */
+.Homepage_orderTable,
+.Products_orderTable,
+.userList_orderTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Homepage_orderTable td,
+.Homepage_orderTable th,
+.Products_orderTable td,
+.Products_orderTable th,
+.userList_orderTable td,
+.userList_orderTable th {
+  text-align: left;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+.Homepage_orderTable td,
+.Products_orderTable td,
+.userList_orderTable td {
+  background-color: #fff;
+  border-bottom: 4px solid #f6f7fb;
+}
+
+.primaryText {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+.secondryText {
+  color: #8c8c8c;
+}
+
+/* userlist page */
+
+.userList_ordersWrapper {
+  width: 100%;
+  padding: 24px 0;
+}
+.userList_FilterWrapper {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.userList_searchBox {
+  width: 90%;
+  padding: 12px 24px;
+  font-size: 15px;
+  border: 0;
+  border-bottom: 2px solid #8c8c8c;
+  margin: 0 36px 0 0;
+  outline: none;
+}
+.userList_Button {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #20b883;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

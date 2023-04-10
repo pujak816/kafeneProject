@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <div id="nav"></div> -->
+    <div>
+      <div id="navbar">
+        <div class="topbar_leftMenu">
+          <div class="topbar_logo">
+            <img
+              src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+              alt="logo"
+            />
+            <p class="topbar_brandName">Kafene</p>
+          </div>
+          <nav>
+            <a class="topbar_menuItems topbar_active" href="./orders.html"
+              >Orders</a
+            >
+            <a class="topbar_menuItems" href="./product.html">Products</a>
+            <a class="topbar_menuItems" href="./users.html">Users</a>
+          </nav>
+        </div>
+        <a class="topbar_rightMenu" href="./index.html" onclick="loggedOut()"
+          >Logout</a
+        >
+      </div>
+      <!-- navbar ends here -->
+      <main class="main_container">
+        <div class="Homepage_Wrapper">
+          <h1 class="Homepage_Heading">Orders</h1>
+          <div class="Homepage_ordersWrapper">
+            <div class="Homepage_FilterWrapper">
+              <h3>Filters</h3>
+              <div class="Homepage_FilterOptions">
+                <p id="count">Count: 0</p>
+                <label class="Homepage_filterCheckbox">
+                  <input
+                    type="checkbox"
+                    name="orders"
+                    value="New"
+                    onclick="loadOrdersData()"
+                    checked
+                  />
+                  New
+                </label>
+                <label class="Homepage_filterCheckbox">
+                  <input
+                    type="checkbox"
+                    name="orders"
+                    value="Packed"
+                    onclick="loadOrdersData()"
+                    checked
+                  />
+                  Packed
+                </label>
+                <label class="Homepage_filterCheckbox">
+                  <input
+                    type="checkbox"
+                    name="orders"
+                    value="InTransit"
+                    onclick="loadOrdersData()"
+                    checked
+                  />
+                  InTransit
+                </label>
+                <label class="Homepage_filterCheckbox">
+                  <input
+                    type="checkbox"
+                    name="orders"
+                    value="Delivered"
+                    onclick="loadOrdersData()"
+                    checked
+                  />
+                  Delivered
+                </label>
+              </div>
+            </div>
+            <div style="width: 100%">
+              <table class="Homepage_orderTable">
+                <tr>
+                  <th>ID</th>
+                  <th>Customer</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+                <tbody class="Homepage_tableBody" id="orderData">
+                  <!-- <tr class="Homepage_tableRow"></tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- external script files -->
+
+    <script src="./orders.js"></script>
+  </body>
+</html>
